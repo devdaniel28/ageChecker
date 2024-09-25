@@ -16,8 +16,64 @@ body {
 #agechekersection p {
     display: inline;
     font-size: 18pt;
+    margin: 0 0 0 15px;
 }
 
 #agechekersection input {
+    height: 2rem;
+    width: 15rem;
+
+    font-size: 18pt;
+    padding: 10px;
     
+    color: #ffffff;
+    font-weight: 500;
+    background: #1768ac;
+
+    border: #1768ac solid 1px;
+    border-radius: 25px;
+}
+
+
+#generateage {
+    display: flex;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+#generateage section {
+    flex-grow: 2;
+}
+
+#generateage section h3 {
+    margin: 0 0 0 15px;
+    color: #03256c;
+}
+
+#generateage section input {
+    margin: 15px 5px 15px 15px;
+
+    width: 2rem;
+    height: 1rem;
+}
+
+#generateage section button {
+    display: block;
+    
+    padding: 10px;
+    margin: 20px;
+
+    font-size: 12pt;
+    color: #ffffff;
+    background: #2541b2;
+    font-weight: 600;
+
+    border: #2541b2 solid 1px;
+    border-radius: 15px;
+}
+
+#generateage textarea {
+    margin: 0 15px;
+    
+    flex-grow: 1;
 }
