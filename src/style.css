@@ -1,79 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Open Sans", system-ui;
 }
 
-
-#titlepage h1 {
+#titlefromwebsite h1 {
     color: #03256c;
-    font-weight: 750;
-    font-size: 45pt;
+    font: 600;
+    font-size: 30pt;
     text-align: center;
 }
 
-#agechekersection p {
-    display: inline;
-    font-size: 18pt;
-    margin: 0 0 0 15px;
-}
-
-#agechekersection input {
-    height: 2rem;
-    width: 15rem;
-
-    font-size: 18pt;
-    padding: 10px;
-    
-    color: #ffffff;
-    font-weight: 500;
-    background: #1768ac;
-
-    border: #1768ac solid 1px;
-    border-radius: 25px;
-}
-
-
-#generateage {
+main {
     display: flex;
-    gap: 15px;
-    margin: 18px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-#generateage section {
-    flex-grow: 2;
+main #config {
+    text-align: center;
 }
 
-#generateage section h3 {
-    margin: 0 0 0 15px;
-    color: #03256c;
+main #config p{
+    display: inline;
+    margin: 0 10px;
+    font-weight: 500;
 }
 
-#generateage section input {
-    margin: 15px 5px 15px 15px;
+main #config input {
+    width: 5rem;
+    height: 2.5rem;
 
-    width: 2rem;
-    height: 1rem;
-}
+    background: #1768ac;
+    border: #1768ac solid 1px;
+    border-radius: 5px;
 
-#generateage section button {
-    display: block;
-    
-    padding: 10px;
-    margin: 20px;
-
-    font-size: 12pt;
-    color: #ffffff;
-    background: #2541b2;
+    color: #fff;
+    font-size: 14pt;
     font-weight: 600;
+    padding: 5px 6px;
 
-    border: #2541b2 solid 1px;
-    border-radius: 15px;
 }
 
-#generateage textarea {
-    margin: 0 15px;
-    
-    flex-grow: 1;
+main #config input::placeholder {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+main #return button {
+     display: block;
+     margin: auto;
+
+     background: #2541b2;
+     color: #fff;
+     border: #2541b2 solid 1px;
+     border-radius: 8px;
+
+     font-size: 13pt;
+     font-weight: 600;
+
+     width: 6rem;
+     height: 3rem;
+
+     padding: 5px;
+}
+
+main #return #result {
+    margin: 20px;
+    padding: 8px;
+
+    width: 20rem;
+    height: 10rem;
+
+    background: #2e49b4;
+    border: #2e49b4 solid 1px;
+    border-radius: 15px;
+
+    font-size: 14pt;
+    font-weight: 500;
+    color: #fff;
+}
+
+main #return #result::placeholder {
+    color: #fff;
+    font-weight: 500;
 }

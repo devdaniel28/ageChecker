@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Um site no qual vai verificar sua idade e sexo dependo do ano que colocar!">
+
     <title>Age Cheker</title>
 
     <link rel="stylesheet" href="src/style.css">
-
-    <!-- fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="titlepage">
+    <header id="titlefromwebsite">
         <h1>Age Cheker</h1>
     </header>
 
-        <section id="agechekersection">
-            <p>Verificador de Idade: </p> <input type="number" id="valueoftheyear" min="1">
-        </section>
+    <main>
+        <div id="config">
+            <input type="number" name="dayofbirth" id="dayofbirth" placeholder="Ano" min="1">
+            
+            <p>/</p>
+            
+            <input type="number" name="monthofbirth" id="monthofbirth" placeholder="Mês" min="1" max="12">
+            
+            <p>/</p>
+            
+            <input type="number" name="yearofbirth" id="yearofbirth" placeholder="Dia" min="1" max="31">
 
-    <main id="generateage">
-        <section>
-            <h3>Sexo:</h3>
-                
-            <input type="radio" name="sex" id="sex01">Masculino</input>
-            <input type="radio" name="sex" id="sex02">Feminino</input>
-                
-            <button>Verificar idade</button>
-        </section>
+        </div>
 
-        <textarea name="resultado" id="resultado" placeholder="Idade.."></textarea>
+        <div id="return">
+
+            <button>Verificar</button>
+
+            <textarea name="result" id="result" placeholder="Resultado.."></textarea>
+
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; dvcDaniel 2024</p>
-    </footer>
 </body>
 <script src="src/script.js"></script>
 </html>
