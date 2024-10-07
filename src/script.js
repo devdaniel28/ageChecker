@@ -1,18 +1,31 @@
 function chekerAge() {
-    const dayOfBirth = document.getElementById('dayofbirth')
-    const monthOfBirth = document.getElementById('monthofbirth')
     const yearOfBirth = document.getElementById('yearofbirth')
+    const monthOfBirth = document.getElementById('monthofbirth')
     const Result = document.getElementById('result')
 
     const Data = new Date()
     const currentYear = Data.getFullYear()
     const currentMonth = Data.getMonth()
-    const currentDay = Data.getDate()
 
-    if (yearOfBirth.value == 0 || monthOfBirth.value == 0 || dayOfBirth.value == 0) {
-        Result.value = "Falta dados, por favor prencher tudo"
+    
+    if (yearOfBirth.value <= 0 || monthOfBirth.value <= 0 || yearOfBirth.value > currentYear || monthOfBirth.value > 12) {
+        Result.value = "Data invalida ou vazia"
     } else {
-        const Age = currentYear - Number(yearOfBirth.value)
-        const daysWithLife = Age * 365 + currentDay // Corrijir essa variavel mais tarde
+
+        let Age = currentYear - Number(yearOfBirth.value)
+        let monthsOfLife = currentMonth - Number(monthOfBirth.value)
+        
+        
+        if (monthOfBirth.value > currentMonth) {
+            Age--
+            monthsOfLife = currentMonth + 12 - Number(monthOfBirth.value)
+        } 
+        
+        Result.value = `Você tem ${Age} anos é ${monthsOfLife} meses de idade!`
+        
+        if (yearOfBirth.value == currentYear && monthOfBirth.value > currentMonth) {
+            Result.value = "Data invalida"
+        }
+
     }
 }
