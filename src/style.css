@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: "Open Sans", system-ui;
+    background: #e9ebf7;
 }
 
 #titlefromwebsite h1 {
@@ -41,6 +42,7 @@ main {
     font-size: 14pt;
     font-weight: 600;
     padding: 5px 6px;
+    margin: 5px;
 
 }
 
