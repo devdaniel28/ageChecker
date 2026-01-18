@@ -106,4 +106,4 @@ Ao usar este software, você concorda com os termos da **GNU General Public Lice
 
 ---
 
-**Assinado** dvcDaniel(eu)
+**Assinado** dvcDaniel
